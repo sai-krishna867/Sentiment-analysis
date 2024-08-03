@@ -10,8 +10,7 @@ from gensim.models import Word2Vec
 from bs4 import BeautifulSoup
 
 # Download NLTK data
-nltk.download('wordnet')
-nltk.download('stopwords')
+nltk.data.path.append('.')
 
 # Load the pre-trained models
 word2vec_model = Word2Vec.load('word2vec_model.model')
